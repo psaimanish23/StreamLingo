@@ -9,9 +9,10 @@ from faster_whisper import WhisperModel
 from gtts import gTTS
 import io
 
+
 # Define paths
 model_name = "facebook/mbart-large-50-many-to-many-mmt"
-model = WhisperModel("large-v3", device="cuda")
+model = WhisperModel("large-v3", device="auto")
 translation_model = MBartForConditionalGeneration.from_pretrained(model_name)
 tokenizer = MBart50TokenizerFast.from_pretrained(model_name)
 

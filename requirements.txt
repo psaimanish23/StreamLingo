@@ -1,0 +1,6 @@
+faster-whisper
+websockets
+asyncio
+gtts
+transformers
+numpy
