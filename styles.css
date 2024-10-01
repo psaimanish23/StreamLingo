@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f8f9fa;
+  /* Bootstrap light background */
+  margin: 0;
+  padding: 20px;
+}
+
+#controls,
+#device-selection,
+#toggles,
+#translation {
+  margin-bottom: 20px;
+}
+
+#videos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+video {
+  width: 45%;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: black;
+}

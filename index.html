@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebRTC Video Call</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mt-4 mb-4">WebRTC Video Call</h1>
+
+        <!-- Controls for room management -->
+        <div id="controls" class="mb-3">
+            <input type="text" id="room-input" class="form-control" placeholder="Enter room name">
+            <button id="create-btn" class="btn btn-primary mt-2">Create Room</button>
+            <button id="join-btn" class="btn btn-success mt-2">Join Room</button>
+        </div>
+
+        <!-- Device selection controls -->
+        <div id="device-selection" class="mb-3">
+            <select id="audio-input" class="form-control mb-2"></select>
+            <select id="audio-output" class="form-control mb-2"></select>
+            <select id="video-input" class="form-control mb-2"></select>
+        </div>
+
+        <!-- Toggle buttons -->
+        <div id="toggles" class="mb-3">
+            <button id="toggle-video" class="btn btn-info">Toggle Camera</button>
+            <button id="toggle-audio" class="btn btn-info">Toggle Microphone</button>
+        </div>
+
+        <!-- StreamLingo button -->
+        <div id="translation" class="mb-3">
+            <button id="stream-lingo-btn" class="btn btn-warning">Enable StreamLingo</button>
+        </div>
+
+        <!-- Status Message -->
+        <div id="status-message" class="alert alert-info mt-3"></div>
+
+        <!-- Video display section -->
+        <div id="videos" class="d-flex justify-content-center mb-4">
+            <video id="localVideo" autoplay muted></video>
+            <video id="remoteVideo" autoplay></video>
+        </div>
+
+    </div>
+
+    <!-- JavaScript and dependencies -->
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
