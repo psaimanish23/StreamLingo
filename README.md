@@ -10,6 +10,8 @@ StreamLingo Video Conferencing with S2ST Feature.
 - ngrok API Key
 
 ## Installation
+### - Docker ( Node Server ) 
+
 - Open this file file Directory (StreamLingo) in you desired IDE. And Run the Docker Desktop in Background.
 - Navigate [**cd**] to the Docker-Server-Node folder. And Run the Following Commands :
 ```bash
@@ -24,6 +26,8 @@ docker build -t <image_name> .
 docker run -d <image_name>
 ```
 **The **<image_name>** should be same here that was given when building. **-d** here runs the image in background.*
+
+### - Python
 
 
 - Now navigate **cd** to the python folder and run command :
