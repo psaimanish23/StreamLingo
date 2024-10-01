@@ -5,9 +5,9 @@ StreamLingo Video Conferencing with S2ST Feature.
 **StreamLingo** is a Web Based Video Conferencing App. A Real-Time S2S Translation Feature integrated in the web environment itself with **Voice Cloning**, taking your voice to apply to the translated speech with natural sounding, emotion added to it.
 
 ## Pre-requisites
-- Docker Desktop.
-- Install Requirements to Run Python Server.
-- ngrok API Key
+- [`Docker Desktop`](https://www.docker.com/products/docker-desktop/).
+- [`ngrok Account`](https://dashboard.ngrok.com/).
+- Install Requirements.
 
 ## Installation
 *Install the python Dependencies first*
