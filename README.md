@@ -10,6 +10,13 @@ StreamLingo Video Conferencing with S2ST Feature.
 - ngrok API Key
 
 ## Installation
+*Install the python Dependencies first*
+
+***RECOMMENDED** Use a dedicatd Virtual env* ( **python-venv OR conda env** )
+```bash
+pip install requirements.txt
+```
+
 ### - Docker ( Node Server ) 
 
 - Open this file file Directory (StreamLingo) in you desired IDE. And Run the Docker Desktop in Background.
